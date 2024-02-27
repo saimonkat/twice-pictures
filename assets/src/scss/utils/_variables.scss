@@ -1,0 +1,22 @@
+//GRID
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xlx: 1340px,
+	xxl: 1500px,
+);
+
+// FONT
+$font: "Cormorant", serif;
+$font2: "Imperial", sans-serif;
+
+// COLORS
+$color-white: #ffffff;
+$color-main: #000000;
+$color-grey: #e8e8e8;
+$color-darkgrey: #cdcdcd;
+$color-green: #1c2e28;
+$color-placeholder: #979797;

@@ -1,0 +1,135 @@
+.director-single {
+	&__header {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(2, auto);
+		justify-items: center;
+		row-gap: 1rem;
+		grid-row-gap: 1rem;
+		padding-top: 2rem;
+
+		@include media-up(md) {
+			padding-top: 3rem;
+		}
+	}
+
+	&__director-name {
+	}
+
+	&__logo {
+		&__image {
+			height: 2em;
+			width: auto;
+
+			@include media-up(md) {
+				height: 2.5rem;
+			}
+		}
+	}
+
+	&__empty {
+		min-height: 80vh;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, auto);
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+
+		&__link {
+			text-decoration: underline;
+		}
+
+		p {
+			font-weight: 600;
+			font-size: 1.4rem;
+			color: $color-green;
+			margin-top: -8rem;
+		}
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-auto-rows: auto;
+		max-width: 90%;
+		margin: 0 auto;
+		row-gap: 0.2rem;
+		grid-row-gap: 0.2rem;
+		column-gap: 0.2rem;
+		grid-column-gap: 0.2rem;
+		padding: 2rem 0 5rem;
+
+		@include media-up(md) {
+		}
+
+		@include media-up(lg) {
+			grid-template-columns: repeat(2, 1fr);
+			row-gap: 0.1rem;
+			grid-row-gap: 0.1rem;
+			column-gap: 0.1rem;
+			grid-column-gap: 0.1rem;
+			max-width: 80%;
+		}
+
+		@include media-up(xl) {
+			grid-template-columns: repeat(3, 1fr);
+			max-width: 90%;
+		}
+
+		@include media-up(xlx) {
+			max-width: 80%;
+		}
+	}
+
+	&__film {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		grid-template-areas: "main";
+		padding-bottom: 56.25%;
+		height: 0;
+
+		&__meta {
+			// grid-area: main;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: grid;
+			justify-items: center;
+			align-content: center;
+			text-align: center;
+			z-index: 1;
+			padding: 0.5rem;
+
+			opacity: 1;
+			height: 100%;
+			width: 100%;
+			transition: all 0.2s ease-in-out;
+			font-weight: 600;
+			font-size: 1.2rem;
+			cursor: pointer;
+
+			span {
+				opacity: 1;
+				color: $color-white;
+				transition: all 0.2s ease-in-out;
+			}
+
+			&:hover {
+				opacity: 0.75;
+				background-color: $color-white;
+				transition: all 0.2s ease-in-out;
+
+				span {
+					color: $color-green;
+				}
+			}
+		}
+
+		&__wrapper {
+			grid-area: main;
+		}
+	}
+}

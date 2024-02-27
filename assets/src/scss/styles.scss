@@ -1,0 +1,18 @@
+/*!
+  Theme Name: Webpack Theme
+  Author: Thousand Lines
+  Description: Setup theme for webpack-enabled WordPress theme development
+  Version: 1.0 
+*/
+
+/* 1. UTILS */
+@import "utils";
+
+/* 4. COMPONENTS */
+@import "components";
+
+/* 5. LAYOUT */
+@import "layouts";
+
+/* 6. PAGES */
+@import "pages";

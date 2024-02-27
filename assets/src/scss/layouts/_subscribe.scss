@@ -1,0 +1,56 @@
+.subscribe {
+	padding: 70px 0 55px;
+	color: $color-main;
+	background-color: $color-darkgrey;
+
+	@include media-up(md) {
+		padding: 70px 0;
+	}
+
+	&-form {
+		transition: 0.3s;
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+		font-family: $font2;
+
+		.form-input {
+			background-color: $color-grey;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		margin-bottom: 33px;
+		line-height: 1.2;
+		font-size: 20px;
+		font-weight: normal;
+
+		@include media-up(md) {
+			margin-bottom: 27px;
+			font-size: 25px;
+		}
+	}
+
+	&__text {
+		margin-bottom: 33px;
+		margin-top: 33px;
+		font-size: 16px;
+		max-width: 290px;
+		margin-left: auto;
+		margin-right: auto;
+
+		@include media-up(md) {
+			max-width: none;
+			margin-bottom: 20px;
+			margin-top: 20px;
+			font-size: 20px;
+		}
+	}
+	&__message {
+		margin-top: 20px;
+	}
+	&__success {
+		color: #198754;
+	}
+}

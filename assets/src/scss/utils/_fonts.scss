@@ -1,0 +1,53 @@
+@import "mixins";
+$font-directory: "../fonts";
+
+@include font(
+	$font_directory,
+	"Imperial",
+	"ImperialURW-Regular",
+	"normal",
+	"normal"
+);
+
+@include font(
+	$font_directory,
+	"Cormorant",
+	"CormorantGaramond-Light",
+	300,
+	"normal"
+);
+@include font(
+	$font_directory,
+	"Cormorant",
+	"CormorantGaramond-LightItalic",
+	300,
+	"italic"
+);
+@include font(
+	$font_directory,
+	"Cormorant",
+	"CormorantGaramond-Regular",
+	"normal",
+	"normal"
+);
+@include font(
+	$font_directory,
+	"Cormorant",
+	"CormorantGaramond-Italic",
+	"normal",
+	"italic"
+);
+@include font(
+	$font_directory,
+	"Cormorant",
+	"CormorantGaramond-Medium",
+	500,
+	"normal"
+);
+@include font(
+	$font_directory,
+	"Cormorant",
+	"CormorantGaramond-SemiBold",
+	600,
+	"normal"
+);

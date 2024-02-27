@@ -1,0 +1,239 @@
+.about-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 70px 16px;
+
+	@include media-up(md) {
+		padding: 70px 16px 160px;
+	}
+
+	@include media-up(xxl) {
+		max-width: 1672px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__icon {
+		//height: 60px;
+		margin-top: 60px;
+		margin-bottom: 70px;
+		max-width: 200px;
+		width: 100%;
+
+		@include media-up(md) {
+			//height: 65px;
+			margin-top: 0;
+			max-width: 250px;
+			margin-bottom: 80px;
+		}
+		@include media-up(xl) {
+			max-width: 275px;
+		}
+	}
+
+	&__title {
+		line-height: 1.2;
+		font-size: 24px;
+		text-align: center;
+		font-weight: 300;
+		margin-bottom: 50px;
+
+		@include media-up(sm) {
+			font-size: 32px;
+		}
+
+		@include media-up(md) {
+			font-size: 40px;
+			margin-bottom: 100px;
+		}
+
+		@include media-up(lg) {
+			font-size: 50px;
+		}
+
+		@include media-up(xl) {
+			font-size: 60px;
+			max-width: 880px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	&__logo {
+		margin-bottom: 44px;
+		color: $color-green;
+		width: 22px;
+		height: 20px;
+
+		@include media-up(md) {
+			margin-bottom: 100px;
+			width: 83px;
+			height: 53px;
+		}
+	}
+
+	&__text {
+		font-size: 18px;
+		line-height: 1.6;
+		text-align: center;
+		margin-bottom: 44px;
+		font-family: $font2;
+
+		@include media-up(md) {
+			font-size: 24px;
+			line-height: 1.6;
+			max-width: 990px;
+			margin-bottom: 160px;
+		}
+	}
+
+	&__banner {
+		margin-bottom: 30px;
+		height: 0;
+		overflow: hidden;
+		position: relative;
+		padding-top: 520px;
+		width: calc(100% + 32px);
+
+		@include media-up(md) {
+			margin-bottom: 70px;
+		}
+
+		@include media-up(lg) {
+			width: 100%;
+			margin-left: 0;
+			margin-bottom: 144px;
+			padding-top: 49.1%;
+		}
+
+		&:hover {
+			a {
+				opacity: 1;
+			}
+		}
+
+		&-logo {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			max-height: 50px;
+
+			@include media-up(lg) {
+				max-height: 99px;
+			}
+		}
+	}
+
+	&__quote {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 88px;
+		font-size: 24px;
+
+		@include media-up(sm) {
+			font-size: 36px;
+		}
+
+		@include media-up(md) {
+			font-size: 50px;
+		}
+
+		@include media-up(lg) {
+			font-size: 60px;
+			margin-bottom: 170px;
+		}
+
+		@include media-up(xl) {
+			flex-direction: row-reverse;
+		}
+
+		h2 {
+			width: 100%;
+			margin-bottom: 88px;
+			// font-size: inherit;
+
+			@include media-up(xl) {
+				margin-bottom: 0;
+				width: 50%;
+				padding-right: 30px;
+				// font-size: calc(68px + 32 * ((100vw - 1200px) / 720));
+			}
+			@media (min-width: 1300px) {
+				padding-right: 50px;
+			}
+			@media (min-width: 1400px) {
+				padding-right: 125px;
+			}
+			@include media-up(xxl) {
+				padding-right: 175px;
+			}
+			@media (min-width: 1650px) {
+				padding-right: 210px;
+			}
+
+			@media (min-width: 1920px) {
+				font-size: 70px;
+			}
+		}
+
+		a {
+			margin: 0 auto;
+
+			@include media-up(xl) {
+				// margin: 0 auto 100px;
+				height: 100%;
+				align-self: flex-end;
+			}
+		}
+	}
+
+	&__conclusion {
+		font-family: $font2;
+		font-size: 18px;
+		line-height: 32px;
+		text-align: center;
+
+		@include media-up(lg) {
+			font-size: 24px;
+			line-height: 50px;
+			max-width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		p {
+			& + p {
+				margin-top: 32px;
+
+				@include media-up(lg) {
+					margin-top: 60px;
+				}
+			}
+		}
+	}
+
+	&__brand-list {
+		column-count: 1;
+		font-family: $font2;
+		font-size: 14px;
+		text-align: center;
+		padding-top: 70px;
+
+		@media (min-width: 375px) {
+			font-size: 18px;
+		}
+		@include media-up(sm) {
+			column-count: 2;
+		}
+		@include media-up(md) {
+			column-count: 3;
+		}
+		@include media-up(lg) {
+			font-size: 22px;
+		}
+		&__brand {
+		}
+	}
+}

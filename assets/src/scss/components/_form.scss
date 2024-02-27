@@ -1,0 +1,23 @@
+.form {
+	&-input {
+		font-size: 16px;
+		line-height: 1.2;
+		padding: 25px 16px;
+
+		@include media-up(md) {
+			font-size: 20px;
+			padding: 20px 16px;
+		}
+
+		&::placeholder {
+			color: $color-placeholder;
+			transition: opacity 0.3s;
+		}
+
+		&:focus {
+			&::placeholder {
+				opacity: 0;
+			}
+		}
+	}
+}

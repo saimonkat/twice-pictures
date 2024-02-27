@@ -1,0 +1,16 @@
+.director {
+	&__film {
+		max-width: 300px;
+		overflow: hidden;
+
+		&__wrapper {
+			max-width: 300px;
+			overflow: hidden;
+
+			.video,
+			.video-bg {
+				position: relative;
+			}
+		}
+	}
+}

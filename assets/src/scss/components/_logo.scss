@@ -1,0 +1,13 @@
+.page-logo {
+    display: block;
+    margin: 0 auto;
+
+    @include media-down(sm) {
+        width: 22px;
+        height: 20px;
+    }
+
+    &--green {
+        color: $color-green;
+    }
+}

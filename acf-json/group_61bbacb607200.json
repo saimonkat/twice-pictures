@@ -1,0 +1,75 @@
+{
+    "key": "group_61bbacb607200",
+    "title": "Category",
+    "fields": [
+        {
+            "key": "field_61bbacbe17f02",
+            "label": "Font style",
+            "name": "font_style",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "cor-sb-42": "Cormorant SemiBold 42",
+                "cor-li-48": "Cormorant Light Italic 48",
+                "imp-m-36": "Imperial Medium 36",
+                "cor-sb-32": "Cormorant SemiBold 32",
+                "cor-sb-36": "Cormorant SemiBold 36",
+                "imp-m-32": "Imperial Medium 32",
+                "cor-m-38": "Cormorant Medium 38"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "category"
+            }
+        ],
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "parent_category"
+            }
+        ],
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "directors_parent"
+            }
+        ],
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "directors_category"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1654616044
+}

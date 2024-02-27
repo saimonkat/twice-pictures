@@ -1,0 +1,9 @@
+import "@icons/cursor.svg";
+import "@icons/cursor-play.svg";
+import "@icons/logo.svg";
+import "@icons/logo-part.svg";
+import "@icons/volume-off.svg";
+import "@icons/volume-on.svg";
+import "@icons/twice-logo-green.svg";
+import "@icons/prev.svg";
+import "@icons/next.svg";
